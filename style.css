@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap');
+
+* { margin:0;
+    padding:0;
+}
+
+a {
+    color: rgb(0, 12, 6);
+    text-decoration: none
+    
+}
+
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+  }
+
+  .titulo-principal{
+    color: rgb(54, 102, 5);
+    justify-content: center;
+    display:flex;
+    margin: auto;
+    line-height: 1.5;
+}
+ 
+ 
+.parrafo1{
+    text-align: right;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+ 
+}
+.resaltado{
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+}
+ 
+ 
+/*HEADER-CABECERA*/
+.cabecera {
+    background-image: linear-gradient(rgb(0, 100, 0), rgb(115, 173, 7));
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-position:center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+ 
+/* LOGO NORMANDIA*/
+.nav-brand {
+    width: 300px;
+    display: flex;
+    flex:column;
+    margin-top: 20px;
+    margin-left: 10px;
+    align-items:center;
+}
+ 
+.subtitulo-logo{
+    color: white;
+    font-family: 'Send Flowers', cursive;
+    margin-bottom: 0;
+    margin-left: 10px;
+    width: 300px;
+    display:flex;
+    justify-content: space-evenly;
+}
+ 
+ 
+/* BARRA DE NAVEGACION*/
+ 
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgba(15, 134, 51, 0.616);
+    box-sizing: content-box;
+    width: 100%;
+    padding: 5px;
+    border: solid #023002 2px;
+}
+ 
+.nav_menu_item {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: -10px;
+    font-size: 18px;
+    list-style: none;
+    margin: 15px;
+}
+ 
+ 
+/*MAIN*/
+ 
+.container_inicio{
+    outline: 2px solid rgba(71, 129, 57, 0.438);
+    width: 90%;
+    max-width:max-content;
+    margin: 30px auto;
+   
+}
+.local_normandia{
+    padding: 12px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 500px;
+    gap: 20px;
+    }
+ 
+.mapa{
+    padding: 12px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 500px;
+    gap: 20px;
+}
+ 
+/*PUBLICIDAD*/
+.banner{
+    display: flex;
+    flex-direction: column;
+}
+ 
+/*FOOTER*/
+ 
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    list-style: none;
+    background-color: rgb(13, 100, 10);
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+ 
+.box_footer{
+    display: inline-block;
+    flex-direction: row;
+    font-size: 15px;
+    list-style:none;
+}
+ 
+.footer ul{
+    list-style: none;
+    justify-content: space-between;
+    width: 40%;
+    margin: auto;
+    list-style:none;
+ 
+  }
+  .footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    padding: 40px;
+    list-style:none;
+  }
+ 
+ 
+/* GALERIA */
+ 
+ 
+.container{
+    outline: 2px solid rgb(21, 94, 3);
+    width: 90%;
+    max-width: 600px;
+    height: 600px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+}
+ 
+    .element{
+        font-size: 2rem;
+        color: antiquewhite;
+        font-family: sans-serif;
+        text-align: center;
+        background-size: cover;
+        background-position: center bottom;
+    }
+    .element1{
+        background-color: greenyellow;
+        background-image: url(./IMAGENES/bici-raleigh.jpg);
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+     
+    .element2{
+        background-color: rgb(21, 233, 145);
+        background-image: url(./IMAGENES/bici-slp.jpg);
+        grid-column: 3/4;
+        grid-row: 1/4;
+    }
+     
+    .element3{
+        background-color: rgb(8, 93, 189);
+        background-image: url(./IMAGENES/bici-urbana.jpg);
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .element4{
+        background-color: rgb(89, 18, 202);
+        background-image: url(./IMAGENES/venzo.jpg);
+        grid-column: 1/-1;
+        grid-row: 4/5;
+    }
+   
+ 
+/* CONTACTO */
+ 
+#advanced-search-form{
+    background-image: url(./IMAGENES/servicios1.jpg);
+    max-width: 800px;
+    margin: 30px auto 0;
+    padding: 20px;
+    color: #0a0a0a;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.2);
+}
+
+#advanced-search-form h2{
+    padding-bottom: 20px;
+    margin: 10px 20px;
+    font-size: 24px;
+}
+
+#advanced-search-form hr{
+    margin-top: 38px;
+    margin-bottom: 54px;
+    margin-left:3px;
+    border: 1px solid #cccccc;
+
+}
+
+#advanced-search-form .form-group{
+	margin-bottom: 20px;
+    margin-left:20px;
+	width: 30%;
+    float:left;
+    text-align: left;
+}
+
+#advanced-search-form .form-control{
+    padding: 12px 20px;
+    height: auto;
+    border-radius: 2px;
+}
+
+#advanced-search-form .radio-inline{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#advanced-search-form .btn{
+    width: 46%;
+    margin: 20px auto 0;
+    display: block;
+    outline: none;
+}
+
+@media screen and (max-width: 800px){
+    #advanced-search-form .form-group{
+        width: 45%;
+    }
+
+    #advanced-search-form{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 560px){
+    #advanced-search-form .form-group{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #advanced-search-form h2{
+        text-align: center;
+    }
+}
+
+
