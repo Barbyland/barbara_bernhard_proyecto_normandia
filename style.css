@@ -126,11 +126,7 @@ html {
     gap: 20px;
 }
  
-/*PUBLICIDAD*/
-.banner{
-    display: flex;
-    flex-direction: column;
-}
+
  
 /*FOOTER*/
  
@@ -190,7 +186,7 @@ html {
  
     .element{
         font-size: 2rem;
-        color: antiquewhite;
+        color: rgb(215, 250, 234);
         font-family: sans-serif;
         text-align: center;
         background-size: cover;
