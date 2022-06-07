@@ -1,2 +1,11 @@
-@import "./componentes/general";
-@import "./componentes/headers.scss";
+@import "./base/resets";
+@import "./abstract/variables";
+@import "./base/general";
+@import "./layout/headers.scss";
+@import "./componentes/index";
+@import "./componentes/nosotros";
+@import "./componentes/servicios";
+@import "./componentes/galeria";
+@import "./componentes/contacto";
+@import "./layout/footer";
+@import "./mediaqueries/mq-formulario"

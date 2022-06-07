@@ -1,0 +1,39 @@
+/*FOOTER*/
+ 
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    list-style: none;
+    background-color: rgb(13, 100, 10);
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+ 
+.box_footer{
+    display: inline-block;
+    flex-direction: row;
+    font-size: 15px;
+    list-style:none;
+}
+ 
+.footer ul{
+    list-style: none;
+    justify-content: space-between;
+    width: 40%;
+    margin: auto;
+    list-style:none;
+ 
+  }
+  .footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    padding: 40px;
+    list-style:none;
+  }

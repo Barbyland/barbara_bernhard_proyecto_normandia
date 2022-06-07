@@ -1,0 +1,24 @@
+.wrapper{
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+    text-align:center;
+    overflow: hidden;
+
+}
+
+.slider-container-nosotros {
+    display: center;
+    width: 70%;
+    height: 80vh;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin:auto;
+  }
+  
+  .slider-container img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+  }

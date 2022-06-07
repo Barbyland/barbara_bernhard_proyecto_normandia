@@ -1,0 +1,53 @@
+
+/* LOGO NORMANDIA*/
+.nav-brand {
+    width: 300px;
+    display: flex;
+    flex:column;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right:10px;
+    align-items:center;
+    overflow: hidden;
+}
+ 
+.subtitulo-logo{
+    color: white;
+    font-family: 'Send Flowers', cursive;
+    margin-bottom: 0;
+    margin-left: 10px;
+    width: 300px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+/* BARRA DE NAVEGACION*/
+.nav-main{
+    float:right;
+    line-height: 200px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgba(15, 134, 51, 0.616);
+    box-sizing: content-box;
+    width: 100%;
+    padding: 5px;
+    border: solid #023002 2px;
+}
+ 
+.nav_menu_item {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: -10px;
+    font-size: 18px;
+    list-style: none;
+    margin: 15px;
+}
+
+
