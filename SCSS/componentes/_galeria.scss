@@ -23,27 +23,28 @@
     }
     .element1{
         background-color: greenyellow;
-        background-image: url(./IMAGENES/bici-raleigh.jpg);
+        background-image: url(../../IMAGENES/bici-raleigh.jpg);
+        /*(./IMAGENES/bici-raleigh.jpg);*/
         grid-column: 1/3;
         grid-row: 1/3;
     }
      
     .element2{
         background-color: rgb(21, 233, 145);
-        background-image: url(./IMAGENES/bici-slp.jpg);
+        background-image: url(../../IMAGENES/bici-slp.jpg);
         grid-column: 3/4;
         grid-row: 1/4;
     }
      
     .element3{
         background-color: rgb(8, 93, 189);
-        background-image: url(./IMAGENES/bici-urbana.jpg);
+        background-image: url(../../IMAGENES/bici-urbana.jpg);
         grid-column: 1/3;
         grid-row: 3/4;
     }
     .element4{
         background-color: rgb(89, 18, 202);
-        background-image: url(./IMAGENES/venzo.jpg);
+        background-image: url(../../IMAGENES/venzo.jpg);
         grid-column: 1/-1;
         grid-row: 4/5;
     }

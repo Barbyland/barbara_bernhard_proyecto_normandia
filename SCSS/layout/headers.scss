@@ -1,5 +1,6 @@
 
 /* LOGO NORMANDIA*/
+
 .nav-brand {
     width: 300px;
     display: flex;
@@ -22,10 +23,6 @@
 }
 
 /* BARRA DE NAVEGACION*/
-.nav-main{
-    float:right;
-    line-height: 200px;
-}
 
 .nav-menu {
     display: flex;
@@ -37,6 +34,7 @@
     width: 100%;
     padding: 5px;
     border: solid #023002 2px;
+
 }
  
 .nav_menu_item {
@@ -47,7 +45,7 @@
     margin-right: -10px;
     font-size: 18px;
     list-style: none;
-    margin: 15px;
+    float:right;
 }
 
 
