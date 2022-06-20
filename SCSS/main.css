@@ -2,10 +2,14 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*VARIABLES*/
 /* MAPS */
+/*PATRON DE COLORES*/
+/*MODIFICANDO VARIABLES DE BOOTSTRAP*/
 html {
   height: 100%;
 }
@@ -161,6 +165,7 @@ a {
   margin: auto;
   text-align: center;
   overflow: hidden;
+  font-size: 18px;
 }
 
 .slider-container-nosotros {
@@ -183,9 +188,121 @@ a {
   scroll-snap-align: center;
 }
 
-.center {
+.subtitulo {
   display: center;
-  margin: auto;
+  margin: 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.body_service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.card .front {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
+  -webkit-box-shadow: 0 5px 10px rgba(9, 116, 32, 0.945);
+          box-shadow: 0 5px 10px rgba(9, 116, 32, 0.945);
+}
+
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: aliceblue;
+  background: rgba(0, 0, 0, 0.945);
+  text-align: center;
+}
+
+.card .back {
+  -webkit-transform: perspective(660px) rotateY(180deg);
+          transform: perspective(660px) rotateY(180deg);
+  background: #056111;
+  color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -webkit-box-shadow: 0 5px 10px #000;
+          box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+
+.card .back .link a {
+  color: #f3f3f3;
+}
+
+.card .back h2 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.card .back p {
+  letter-spacing: 1px;
+}
+
+.card:hover .front {
+  -webkit-transform: perspective(600px) rotateY(180deg);
+          transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  -webkit-transform: perspective(600px) rotateY(360deg);
+          transform: perspective(600px) rotateY(360deg);
 }
 
 /* GALERIA */
@@ -328,22 +445,28 @@ a {
   list-style: none;
 }
 
-.footer ul {
-  list-style: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 40%;
-  margin: auto;
+.box_footer ul {
   list-style: none;
 }
 
-.footer a {
+.box_footer a {
   text-decoration: none;
   color: black;
-  font-size: 24px;
-  padding: 40px;
-  list-style: none;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.box_footer p {
+  color: black;
+}
+
+.box_footer .datos {
+  color: black;
+}
+
+.box_footer .redesSociales {
+  width: 50px;
+  height: 50px;
 }
 
 @media screen and (max-width: 800px) {

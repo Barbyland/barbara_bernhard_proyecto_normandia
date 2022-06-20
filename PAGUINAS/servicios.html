@@ -12,13 +12,12 @@
        
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+        
         <!-- PERSONALIZADO CSS-->
         <link rel="stylesheet" href="../SCSS/main.css">
         <script src="https://kit.fontawesome.com/ffbd07c6af.js" crossorigin="anonymous"></script>
      
     </head>
-
     <body>
         <!-- inicio encabezado -->
     <header class="container_fluid bg-success d-flex justify content center">
@@ -53,35 +52,60 @@
         <div class="titulo-principal">
             <h1> SERVICIOS</h1>
         </div>
-           
-             <div class="wrapper">
-                <p>Somos una Tienda dedicada exclusivamente a la venta, reparacion y restauracion de BICICLETAS. 
-               </p>
-            </div>
-             
-<!-- TABLA DE SERVICIOS-->
-<table border="1" cellpadding="5">
-    <tr>
-       <th> </th>
-       <th>Service Control</th>
-       <th>Service Completo</th>
-       <th>Service Pro</th>
-    </tr>
-    <tr>
-        <td>Servicio</td>
-        <td>Poné tu bicicleta a punto de los pequeños desajustes.</td>
-        <td>El más aconsejado y demandado. Poné tu bici a punto.</td>
-        <td>Se recomienda una vez al año para mimar la bicicleta y que dure muchos años.</td>
-    </tr>
-    <tr>
-        <td>Duración del mantenimiento</td>
-        <td>3 a 6 meses</td>
-        <td>6 a 12 meses</td>
-        <td>12 meses</td>
-    </tr>
-</table>
-<section>
-    <img class="center" src="../IMAGENES/servicios1.jpg" alt="img contacto" width="550" height="400"/>
+        <div class="subtitulo">
+            <p>Somos una Tienda dedicada exclusivamente a la venta, reparacion y restauracion de BICICLETAS. 
+           </p>
+        </div>
+      
+<section class="body_service">
+                 
+<div class="card">
+    <div class="face front">
+       <img src="../IMAGENES/CARDS/ontrail.jpg" alt="">
+       <h2>Service Control</h2>
+    </div>
+    <div class="face back">
+        <h2>Service Control</h2>
+        <p> Poné tu bicicleta a punto de los pequeños desajustes. </p>
+        <p> Duración del mantenimiento: 3 a 6 meses</p>
+        <div class="link"> 
+           <a href="#"> Detalles</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="card">
+    <div class="face front">
+       <img src="../IMAGENES/CARDS/rock.jpg" alt="">
+       <h2>Service Completo</h2>
+    </div>
+    <div class="face back">
+        <h2>Service Completo</h2>
+        <p> El más aconsejado y demandado. Poné tu bici a punto. </p>
+        <p> Duración del mantenimiento: 6 a 12 meses</p>
+        <div class="link"> 
+           <a href="#"> Detalles</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="card">
+    <div class="face front">
+       <img src="../IMAGENES/CARDS/shimano2.jpg" alt="">
+       <h2>Service Pro</h2>
+    </div>
+    <div class="face back">
+        <h2>Service Pro</h2>
+        <p> Se recomienda una vez al año para mimar la bicicleta y que dure muchos años.</p>
+        <p> Duración del mantenimiento: 12 meses</p>
+        <div class="link"> 
+           <a href="#"> Detalles</a>
+        </div>
+    </div>
+
+</div>
 </section>
 
 <!-- inicio de footer --> 
@@ -110,31 +134,38 @@
         <div class="box_footer">
                <nav>
                    <ul>
-                       <li><a href="#">Inicio</a></li>
+                    <li><a href="./../index.html">Inicio</a></li>
    
-                       <li><a href="../paguinas/nosotros.html">Nosotros</a></li>
-   
-                       <li><a href="../paguinas/galeria.html">Galería</a></li>
-   
-                       <li><a href="../paguinas/servicios.html">Servicios</a></li>
-   
-                      <li><a href="../paguinas/contacto.html">Contacto</a></li>
+                    <li><a href="../PAGUINAS/nosotros.html">Nosotros</a></li>
+ 
+                    <li><a href="../PAGUINAS/galeria.html">Galería</a></li>
+ 
+                    <li><a href="../PAGUINAS/servicios.html">Servicios</a></li>
+ 
+                    <li><a href="../PAGUINAS/contacto.html">Contacto</a></li>
                   </ul>
                 </nav>
         </div>
    
-       <div class="box_footer">
-           <ul>
-               <li> <a>Nuestro local y horarios:</a></li>
-               <li> <a>📍Ameghino 737, Campana</a></li>
-               <li> <a>🕘 Lun a Sáb 9:30-12:30 hs. - 17:00-21:00 hs.</a></li>  
-               
-            </ul>  
-       </div>
+        <div class="box_footer">
+            <ul class="datos">
+            
+                <li> <i class="fa-solid fa-location-dot"></i>
+                    <a>Ameghino 737, Campana</a>
+                 </li>
+                <li>
+                    <i class="fa-solid fa-clock"></i>  
+                   <a>Lun a Sáb 9:30-12:30 hs. - 17:00-21:00 hs.</a>
+                </li>  
+                
+             </ul>  
+        </div>
  
 </div>
  
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
  
 </html>
