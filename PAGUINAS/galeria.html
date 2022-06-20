@@ -35,6 +35,9 @@
     <!-- inicio nav -->
     <div>
         <nav class="nav-main">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
             <ul class="nav-menu">
                 <li class="nav_menu_item"><a href="../index.html">Inicio</a></li>
 
@@ -56,14 +59,28 @@
     <h1> GALERÍA </h1>
 </div>
 
-<main class="galeria">
-<section class="container">
-   <div class="element1 element">#1</div>
-   <div class="element2 element">#2</div>
-   <div class="element3 element">#3</div>
-   <div class="element4 element">#4</div>
-
-</section>
+<main>
+    <div id="carouselExampleInterval" class="carousel slide w-50 d-block mx-auto" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="../IMAGENES/bici-raleigh.jpg" class="d-block w-100" alt="bici-raleigh" class="img-fluid">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="../IMAGENES/bici-urbana.jpg" class="d-block w-100" alt="bici-urbana" class="img-fluid">
+          </div>
+          <div class="carousel-item">
+            <img src="../IMAGENES/bici-slp.jpg" class="d-block w-100" alt="bici-slp" class="img-fluid">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
 </main>
 
