@@ -1,5 +1,11 @@
 /*FOOTER*/
- 
+.footer{
+  display:flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin:auto;
+} 
+
 .container_footer{
     display: flex;
     flex-wrap: wrap;
@@ -7,11 +13,12 @@
     margin: auto;
     list-style: none;
     background-color: rgb(15, 134, 51);
+    color:black;
     position: sticky;
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 10px 0;
+    padding: 20px 0;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 
   }
@@ -23,27 +30,20 @@
     list-style:none;
 }
  
-.box_footer ul{
-    list-style: none;
-   
-  }
-  .box_footer a{
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    padding: 20px;
-  }
-
-  .box_footer p{
-    color:black;
-  }
-
-  .box_footer .datos{
-    color:black;
-  }
-
   .box_footer .redesSociales{
-    width:50px;
-    height:50px;
+    width:36px;
+    height:36px;
   }
 
+  @media screen and (max-width: 1100px){
+   .container_footer{
+     flex-wrap: wrap;
+     .redesSociales,
+     .menu-inferior{
+       margin-top: 40px;
+     }
+    
+   }
+    }
+
+    
